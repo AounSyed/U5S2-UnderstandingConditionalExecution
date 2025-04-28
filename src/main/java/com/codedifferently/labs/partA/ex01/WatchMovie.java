@@ -4,9 +4,15 @@ public class WatchMovie {
     public static String watchMovie() {
         String response ="";
         /* Your code goes here*/
-
-
-        response += ("Enter the movie ticket price \n");
+        int price = 12;
+        int rating = 5;
+        if (price >= 12 && rating == 5)
+        {
+            response += "I’m interested in watching the movie";
+        }
+        else {
+            response += ("I am not interested in watching the movie");
+        }
         return response;
 
     }

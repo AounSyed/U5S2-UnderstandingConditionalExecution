@@ -5,16 +5,20 @@ public class TernaryOperator {
         String response = "";
 
         int x = 4, y = 9;
-        if (y / x < 3) {
-            x += y;
-        } else {
-            x *= y;
-        }
+//        if (y / x < 3) {
+//            x += y;
+//        } else {
+//            x *= y;
+//        }
+//        response += ("After if stmt, x = " + x);
+//
+//        return response;
+
+        // Use a ternary operator to perform the same logic as above.
+        x = (y / x < 3) ? x += y : x;
         response += ("After if stmt, x = " + x);
 
         return response;
-
-        // Use a ternary operator to perform the same logic as above.
     }
 
 
