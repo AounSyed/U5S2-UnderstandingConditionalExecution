@@ -10,8 +10,15 @@ public class AlgoChallenge {
      */
 
     public static Boolean containE(String str) {
-
-        return null;
+        int eCount = 0;
+        for (int i = 0; i < str.length(); i++){
+            if (str.charAt(i) == 'e')
+                eCount++;
+        }
+        if (1 <= eCount && eCount <= 3)
+            return true;
+        else
+            return false;
     }
 
      /* Problem 2
@@ -30,8 +37,11 @@ public class AlgoChallenge {
      */
 
     public static String everyOther(String str, int n) {
-
-        return null;
+        String newWord = "";
+        for (int i = 0; i < str.length(); i += n) {
+            newWord += str.substring(i, i+1);
+        }
+        return newWord;
     }
 
 
